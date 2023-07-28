@@ -9,6 +9,8 @@ require('dotenv').config();
 const pringlesRoute = require('./routes/pringles');
 const makePringles  = require('./controllers/makePringles');
 const banana chipsRoute = require('./routes/banana chips');
+const test  = require('./controllers/test');
+app.use('/asfas', test);
 app.use('/banana chips', banana chipsRoute);
 app.use('/pringles/sourCream', makePringles);
 app.use('/pringles', pringlesRoute);
