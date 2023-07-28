@@ -7,6 +7,8 @@ const PORT = 8009;
 require('dotenv').config();
 
 const pringlesRoute = require('./routes/pringles');
+const makePringles  = require('./controllers/makePringles');
+app.use('/pringles/sourCream', makePringles);
 app.use('/pringles', pringlesRoute);
 app.use(cors())
 app.use(express.json());
