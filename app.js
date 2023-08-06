@@ -14,6 +14,8 @@ const asfas  = require('./controllers/asfas');
 app.use('/asdas', asfas);
 app.use('/asfas', test);
 app.use('/banana chips', banana chipsRoute);
+const test controller  = require('./controllers/test controller');
+app.use('/controller', test controller);
 app.use('/pringles/sourCream', makePringles);
 app.use('/pringles', pringlesRoute);
 app.use(cors())
